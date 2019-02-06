@@ -1,0 +1,56 @@
+/* Home Page
+   ========================================================================== */
+
+.home {
+    background-image: url("assets/images/siteBackground_1080p.jpg");
+    background-size: cover;
+    
+    .site-header {
+        border-bottom: none;
+    }
+
+    .site-content {
+        max-width: 60%;
+        margin-top: 150px;
+        background: transparent;
+    }
+
+    .site-footer {
+        margin-top: 60px;
+        background: transparent;
+
+        a:hover::before {
+                color: #1B243A;
+                transition: color 0.5s;
+        }
+    }
+
+    .main-nav a {
+        color: white;
+    }
+}
+
+.home-header {
+    font: 70px "visionbold";
+    color: #1B243A;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+
+    .text-highlight {
+        background: #FDB913;
+        padding: 10px 0;
+    }
+}
+
+.home-text {
+    font: 40px "visionbold";
+    color: #FDB913;
+    margin: 0;
+    padding: 0;
+
+    .text-highlight {
+        background: #1B243A;
+        padding: 10px 0;
+    }
+}

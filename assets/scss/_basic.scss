@@ -1,0 +1,105 @@
+body {
+    background-color: #EEEEEE;
+    font-family: "visionregular";
+    color: #333333;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.site-title, .site-description {
+    position: absolute;
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: [branding] 25% [navigation] 75%;
+}
+
+.site-branding {
+    grid-area: branding;
+}
+
+.main-nav {
+    grid-area: navigation;
+    justify-self: end;
+    align-self: center;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        display: inline;
+        margin-left: 32px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+
+    a {
+        color: #333333;
+        text-decoration: none;
+        position: relative;
+
+        /*******
+        * The hover undeline was created based on the effect by Devilish Alchemist
+        * url: https://codepen.io/devilishalchemist/pen/ZYLZay
+        *******/
+        &:before,
+        &:after {
+            content: url(assets/images/makerPointer.png);
+            position: absolute;
+            bottom: -5px;
+            left: 0; right: 0;
+            height: 2px;
+            background-color: #FDB913;
+        }
+        &:before {
+            opacity: 0;
+            transform: translateY(- 8px);
+            transition: transform 0s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s;
+        }
+        &:after {
+            opacity: 0;
+            transform: translateY(8px/2);
+            transition: transform .2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity .2s;
+        }
+        &:hover,
+        &:focus {
+            &:before,
+            &:after {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            &:before {
+                transition: transform .2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity .2s;
+            }
+            &:after {
+                transition: transform 0s .2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity 0s .2s;
+            }
+        }
+    }
+}
+
+.site-content {
+    //background: red;
+}
+
+.site-footer {
+    a {
+        font-size: 40px;
+        text-decoration: none;
+            cursor: pointer;
+    }
+}
