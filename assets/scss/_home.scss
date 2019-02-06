@@ -4,20 +4,25 @@
 .home {
     background-image: url("assets/images/siteBackground_1080p.jpg");
     background-size: cover;
-    
-    .site-header {
-        border-bottom: none;
-    }
+    background-position: center;
 
     .site-content {
         max-width: 60%;
-        margin-top: 150px;
+        margin-top: 15%;
         background: transparent;
     }
 
     .site-footer {
         margin-top: 60px;
         background: transparent;
+
+        .social-icons {
+            margin-left: 16px;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+        }
 
         a:hover::before {
                 color: #1B243A;
@@ -31,7 +36,7 @@
 }
 
 .home-header {
-    font: 70px "visionbold";
+    font: 5rem "visionbold";
     color: #1B243A;
     margin: 0;
     margin-bottom: 32px;
@@ -44,13 +49,84 @@
 }
 
 .home-text {
-    font: 40px "visionbold";
+    font: 2.5rem "visionbold";
     color: #FDB913;
     margin: 0;
     padding: 0;
+    line-height: 120%;
 
     .text-highlight {
         background: #1B243A;
         padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .home {
+        .site-content {
+            max-width: 70%;
+            margin-top: 15%;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .home {
+        .site-content {
+            max-width: 75%;
+            margin-top: 15%;
+        }
+    }
+
+    .home-header {
+        font-size: 4rem;
+    }
+
+    .home-text {
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home {
+        background-position: 70%;
+
+        .site-content {
+            max-width: 100%;
+            margin-top: 40%;
+        }
+
+        .site-footer {
+            padding-bottom: 32px;
+            margin: 60px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .home {
+        background-position: 75%;
+
+        .site-content {
+            margin-top: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home {
+        .site-content {
+            margin-top: 70%;
+        }
+    }
+
+    .home-header {
+        font-size: 3rem;
+    }
+
+    .home-text {
+        font-size: 1rem;
+        line-height: 200%;
     }
 }
