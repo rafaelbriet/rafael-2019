@@ -82,34 +82,6 @@ endif;
 add_action( 'after_setup_theme', 'rafaelbriet_setup' );
 
 /**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-
-/*
-
-function rafaelbriet_widgets_init() {
-
-	register_sidebar(
-		array(
-			'name'          => __( 'Footer', 'rafaelbriet' ),
-			'id'            => 'sidebar-1',
-			'description'   => __( 'Add widgets here to appear in your footer.', 'rafaelbriet' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
-
-}
-
-add_action( 'widgets_init', 'rafaelbriet_widgets_init' );
-
-*/
-
-/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
@@ -130,6 +102,8 @@ add_action( 'after_setup_theme', 'rafaelbriet_content_width', 0 );
  */
 function rafaelbriet_scripts() {
 	wp_enqueue_style( 'rafaelbriet-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+
+	wp_enqueue_script( 'rafaelbriet-menutoogle', get_template_directory_uri() . '/assets/js/menuToggle.js', array('jquery'), null, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

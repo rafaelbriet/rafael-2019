@@ -6,14 +6,29 @@
     background-size: cover;
     background-position: center;
 
+    .blog-nav {
+        display: none;
+    }
+
+    .site-header {
+        border-bottom: none;
+    }
+
     .site-content {
-        max-width: 60%;
         margin-top: 15%;
         background: transparent;
     }
 
+    .site-content-center {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 16px;
+        display: grid;
+        grid-template-columns: 60%;
+    }
+
     .site-footer {
-        margin-top: 60px;
+        margin-top: 20px;
         background: transparent;
 
         .social-icons {
@@ -32,6 +47,15 @@
 
     .main-nav a {
         color: white;
+    }
+
+    .site-footer-center {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 16px;
+        display: grid;
+        grid-template-columns: 60%;
+        text-align: left;
     }
 }
 
@@ -64,8 +88,11 @@
 @media screen and (max-width: 1130px) {
     .home {
         .site-content {
-            max-width: 70%;
             margin-top: 15%;
+        }
+
+        .site-content-center {
+            grid-template-columns: 70%;
         }
     }
 }
@@ -73,7 +100,6 @@
 @media screen and (max-width: 920px) {
     .home {
         .site-content {
-            max-width: 75%;
             margin-top: 15%;
         }
     }
@@ -93,8 +119,11 @@
         background-position: 70%;
 
         .site-content {
-            max-width: 100%;
             margin-top: 40%;
+        }
+
+        .site-content-center {
+            grid-template-columns: 1fr;
         }
 
         .site-footer {
@@ -118,6 +147,10 @@
     .home {
         .site-content {
             margin-top: 70%;
+        }
+
+        .site-footer-center {
+            grid-template-columns: 1fr;
         }
     }
 
