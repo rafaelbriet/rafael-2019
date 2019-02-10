@@ -1,6 +1,6 @@
 <?php get_header( ); ?>
 
-<div class="site-content-center">
+<div class="blog-index-container">
     
     <article class="post">
         <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
@@ -124,6 +124,6 @@
 
     <div class="pagination"></div>
 
-</div>
+</div><!-- blog-index-container -->
 
 <?php get_footer( ); ?>
