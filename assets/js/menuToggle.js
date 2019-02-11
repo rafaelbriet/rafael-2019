@@ -1,11 +1,3 @@
-/* 
-$('.blog-nav-toggle').click(function() {
-  
-    $('.blog-categories-list').toggleClass('blog-nav-open', 500);
-    $(this).toggleClass('open');
-    
-  })
-
-alert("Hellor JQuery");
-
-*/
+jQuery('.blog-nav-toggle').click(function() {
+  jQuery('.blog-categories-list').toggleClass('blog-nav-open');
+});

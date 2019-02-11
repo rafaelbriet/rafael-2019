@@ -1,54 +1,40 @@
+<?php /* Template Name: Portfolio */ ?>
 <?php get_header( ); ?>
 
-<div class="site-content-center">
+<div class="portfolio-index-container">
     
-    <article class="post">
+    <article class="post portfolio">
         <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
+        <div class="portfolio-overlay">
+            <h2 class="portfolio-title"><a href="">10 Things You Should Do In Design</a></h2>
+            <a href="" class="read-more portfolio-read-more">Continue lendo</a>
         </div>
-
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
     </article><!-- .post -->
 
-    <article class="post">
+    <article class="post portfolio">
         <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
+        <div class="portfolio-overlay">
+            <h2 class="portfolio-title"><a href="">10 Things You Should Do In Design</a></h2>
+            <a href="" class="read-more portfolio-read-more">Continue lendo</a>
         </div>
-
-        <h2 class="post-title"><a href="">Seven Ways To Learn Marketing Effectively</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
     </article><!-- .post -->
 
-    <article class="post">
+    <article class="post portfolio">
         <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
+        <div class="portfolio-overlay">
+            <h2 class="portfolio-title"><a href="">10 Things You Should Do In Design</a></h2>
+            <a href="" class="read-more portfolio-read-more">Continue lendo</a>
         </div>
-
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
     </article><!-- .post -->
 
-    <div class="pagination"></div>
+    <article class="post portfolio">
+        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
+        <div class="portfolio-overlay">
+            <h2 class="portfolio-title"><a href="">10 Things You Should Do In Design</a></h2>
+            <a href="" class="read-more portfolio-read-more">Continue lendo</a>
+        </div>
+    </article><!-- .post -->
 
-</div>
+</div><!-- .portfolio-index-container -->
 
 <?php get_footer( ); ?>

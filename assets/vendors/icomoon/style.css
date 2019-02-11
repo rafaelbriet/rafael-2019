@@ -1,13 +1,10 @@
-/* Social icons
-   ========================================================================== */
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('assets/vendors/icomoon/fonts/icomoon.eot?u8wy1t');
-  src:  url('assets/vendors/icomoon/fonts/fonts/icomoon.eot?u8wy1t#iefix') format('embedded-opentype'),
-    url('assets/vendors/icomoon/fonts/icomoon.ttf?u8wy1t') format('truetype'),
-    url('assets/vendors/icomoon/fonts/icomoon.woff?u8wy1t') format('woff'),
-    url('assets/vendors/icomoon/fonts/icomoon.svg?u8wy1t#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ulsyfa');
+  src:  url('fonts/icomoon.eot?ulsyfa#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ulsyfa') format('truetype'),
+    url('fonts/icomoon.woff?ulsyfa') format('woff'),
+    url('fonts/icomoon.svg?ulsyfa#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Twitter_white:before {
+  content: "\e905";
+  color: #fff;
+}
 .icon-Facebook_white:before {
   content: "\e900";
   color: #fff;
@@ -45,10 +46,6 @@
 }
 .icon-Behance_white:before {
   content: "\e904";
-  color: #fff;
-}
-.icon-Twitter_white:before {
-  content: "\e905";
   color: #fff;
 }
 .icon-search:before {
