@@ -49,6 +49,15 @@
         color: white;
     }
 
+    .menu-header-toggle {
+        background: white;
+    
+        &::before,
+        &::after {
+            background: white;
+        }
+    }
+
     .site-footer-center {
         max-width: 1280px;
         margin: 0 auto;

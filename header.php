@@ -37,9 +37,12 @@
             </div>
             
             <nav class="main-nav">
+                <div class="menu-header-toggle"></div>
                 <?php 
                     wp_nav_menu( array(
                         'theme_location' => 'header-menu',
+                        'container' => false,
+                        'menu_class' => 'menu-header',
                     ))                
                 ?>
             </nav>
@@ -51,7 +54,8 @@
             <nav class="blog-categories-nav">
                 <div class="blog-nav-toggle">
                     <div>Categorias</div>
-                    <div class="down-arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/arrowDown.svg'; ?>" alt=""></div></div>
+                    <div class="down-arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/arrowDown.svg'; ?>" alt=""></div>
+                </div>
                 <ul class="blog-categories-list">
                     <li><a href="http://" target="_blank" rel="noopener noreferrer">Design</a></li>
                     <li><a href="http://" target="_blank" rel="noopener noreferrer">Marketing</a></li>

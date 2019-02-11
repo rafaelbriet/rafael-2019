@@ -38,14 +38,14 @@ body {
         margin: 0;
         padding: 0;
     }
-    
-    li {
-        display: inline;
-        margin-left: 32px;
+}
 
-        &:first-of-type {
-            margin-left: 0;
-        }
+.menu-item {
+    display: inline;
+    margin-left: 32px;
+
+    &:first-of-type {
+        margin-left: 0;
     }
 
     a {
@@ -91,6 +91,105 @@ body {
             }
         }
     }
+}
+
+@media screen and (max-width: 700px) {
+    .site-header-center {
+        position: relative;
+    }
+
+    .menu-header-toggle {
+        background-color: #333333;
+        width: 26px;
+        border-radius: 3px;
+        height: 3px;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+        transition: background-color 300ms ease-in-out;
+        z-index: 100;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            background-color: #333333;
+            width: 26px;
+            border-radius: 3px;
+            height: 3px;
+            transition: all 400ms ease-in-out;
+            transition: background-color 300ms ease-in-out;
+        }
+
+        &::before {
+           transform: translateY(-6px);
+           opacity: 1;
+        }
+
+        &::after {
+            transform: translateY(3px);
+        }
+    }
+
+    .menu-header {
+        background: #1B243A;
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+        display: flex;
+        text-align: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: height 200ms ease-in-out;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+
+        &:first-child {
+            margin-top: 50px;
+        }
+
+        a {
+            display: block;
+            color: white;
+        }
+    }
+}
+
+    
+.menu-header-open {
+    height: 100vh;
+}
+
+.menu-open .menu-header-toggle {
+        background-color: white;
+        transform: rotate(45deg);
+        position: relative;
+        z-index: 100;
+        
+
+        &::before {
+            background-color: white;
+            opacity: 0;
+            
+        }
+
+        &::after {
+            background-color: white;
+            transform: translateY(-3px) rotate(-90deg);
+            
+        }
+    }
+
+// Prevent Body Scrolling
+// font: https://davidwalsh.name/prevent-body-scrolling
+.no-scroll {
+    overflow: hidden;
 }
 
 // BLOG NAVIGATION
