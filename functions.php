@@ -30,8 +30,8 @@ if ( ! function_exists( 'rafaelbriet_setup' ) ) :
 		register_nav_menus(
 			array(
 				'header-menu' => __( 'Primary', 'rafaelbriet' ),
-				'footer-menu' => __( 'Footer Menu', 'rafaelbriet' ),
-				'social-menu' => __( 'Social Links Menu', 'rafaelbriet' ),
+				'blog-menu' => __( 'Blog Menu', 'rafaelbriet' ),
+				'portfolio-menu' => __( 'Portfolio Menu', 'rafaelbriet' ),
 			)
 		);
 

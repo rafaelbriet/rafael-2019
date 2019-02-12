@@ -43,7 +43,7 @@
                         'theme_location' => 'header-menu',
                         'container' => false,
                         'menu_class' => 'menu-header',
-                    ))                
+                    ));
                 ?>
             </nav>
         </div><!-- .site-header-center -->
@@ -56,13 +56,23 @@
                     <div>Categorias</div>
                     <div class="down-arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/arrowDown.svg'; ?>" alt=""></div>
                 </div>
-                <ul class="blog-categories-list">
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Design</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Marketing</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Art</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Music</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Games</a></li>
-                </ul>
+
+                <?php 
+                    if(is_post_type_archive()) { 
+                        wp_nav_menu( array(
+                            'theme_location' => 'portfolio-menu',
+                            'container' => false,
+                            'menu_class' => 'blog-categories-list',
+                        ));
+                    } else {
+                        wp_nav_menu( array(
+                            'theme_location' => 'blog-menu',
+                            'container' => false,
+                            'menu_class' => 'blog-categories-list',
+                        ));
+                    }
+                ?>
+                
             </nav>
 
             <div class="search-form-container">
