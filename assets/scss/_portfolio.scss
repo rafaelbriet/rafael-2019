@@ -10,7 +10,7 @@
         color: white;
     }
 
-    .featured-image {
+    .attachment-post-thumbnail {
         margin-bottom: 0;
         transition: transform 200ms ease-in-out;
     }
@@ -20,7 +20,7 @@
             transform: translateY(0);
         }
 
-        .featured-image {
+        .attachment-post-thumbnail {
             transform: scale(1.25);
         }
     }

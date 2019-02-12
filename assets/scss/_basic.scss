@@ -374,23 +374,59 @@ body {
     }
 }
 
-.featured-image {
+.attachment-post-thumbnail {
     display: block;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.post-title {
-    margin: 8px 0;
-    font-size: 24px;
+.no-post-thumbnail {
+    max-width: 100%;
+    min-height: 395px;
+    margin-bottom: 20px;
+    background: #BFBFBF;
 }
 
-.post-description {
-    margin: 8px 0;
+.post-title {
+    margin: 16px 0;
+    font-size: 24px;
 }
 
 .meta, .read-more {
     font-style: italic;
+}
+
+// PAGINAÇÃO
+.screen-reader-text {
+   display: none;
+}
+
+.pagination {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.page-numbers {
+    text-decoration: none;
+    color: #333333;
+    padding: 3px 6px;
+    margin: 0 3px;
+    font-weight: bold;
+}
+
+.next {
+    margin-left: 16px;
+}
+
+.previous {
+    margin-right: 16px;
+}
+
+.current {
+    background: #FDB913;
+    border-radius: 3px;
+    padding: 3px 6px;
+    color: white;
 }
 
 /*******

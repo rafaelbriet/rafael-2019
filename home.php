@@ -2,128 +2,40 @@
 
 <div class="blog-index-container">
     
-    <article class="post">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
+
+
+    <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
+    
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <?php if(has_post_thumbnail()) : the_post_thumbnail(); else : ?>
+            <div class="no-post-thumbnail"></div>
+        <?php endif; ?>
         <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
+            <span class="post-date"><?php the_date('', '', ' - '); ?></span>
+            <span class="post-categories"><?php the_category(', '); ?></span>
         </div>
 
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
+        <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+        <?php the_excerpt(); ?>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="read-more">Coontinue lendo</a>
     </article><!-- .post -->
 
-    <article class="post">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
-        </div>
-
-        <h2 class="post-title"><a href="">Seven Ways To Learn Marketing Effectively</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
-    </article><!-- .post -->
-
-    <article class="post">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
-        </div>
-
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
-    </article><!-- .post -->
-
-    <article class="post">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
-        </div>
-
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
-    </article><!-- .post -->
-
-    <article class="post">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
-        </div>
-
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
-    </article><!-- .post -->
-
-    <article class="post">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
-        </div>
-
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
-    </article><!-- .post -->
-
-    <article class="post">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
-        </div>
-
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
-    </article><!-- .post -->
-
-    <article class="post">
-        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/images/Mask Group.jpg"; ?>" alt="" class="featured-image">
-        <div class="meta">
-            <span class="post-date">08/02/2019 -</span>
-            <span class="post-categories">
-                <a href="">Design,</a>
-                <a href="">arte</a>
-            </span>
-        </div>
-
-        <h2 class="post-title"><a href="">10 Things You Should Do In Design</a></h2>
-        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non diam nec nibh mattis efficitur. Cras consequat pellentesque augue sit amet hendrerit. Donec semper auctor tincidunt.</p>
-        <a href="" class="read-more">Coontinue lendo</a>
-    </article><!-- .post -->
-
-    <div class="pagination"></div>
+    <?php
+            endwhile;
+            else :
+                echo 'Desculpa, mas nenhum post foi encontrado';
+        endif;
+    ?>
 
 </div><!-- blog-index-container -->
+
+<div class="pagination">
+    <?php the_posts_pagination(array(
+        'midsize' => 4,
+        'prev_text' => __( 'Anterior', 'textdomain' ),
+        'next_text' => __( 'Próximo', 'textdomain' ),
+        'screen_reader_text' => __( 'Navegação das publicações', 'textdomain' ),
+    )); ?> 
+</div>
 
 <?php get_footer( ); ?>

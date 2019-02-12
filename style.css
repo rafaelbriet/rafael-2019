@@ -812,20 +812,49 @@ body {
     .post a:hover {
       text-decoration: underline; }
 
-.featured-image {
+.attachment-post-thumbnail {
   display: block;
   width: 100%;
   margin-bottom: 20px; }
 
-.post-title {
-  margin: 8px 0;
-  font-size: 24px; }
+.no-post-thumbnail {
+  max-width: 100%;
+  min-height: 395px;
+  margin-bottom: 20px;
+  background: #BFBFBF; }
 
-.post-description {
-  margin: 8px 0; }
+.post-title {
+  margin: 16px 0;
+  font-size: 24px; }
 
 .meta, .read-more {
   font-style: italic; }
+
+.screen-reader-text {
+  display: none; }
+
+.pagination {
+  text-align: center;
+  margin: 16px 0; }
+
+.page-numbers {
+  text-decoration: none;
+  color: #333333;
+  padding: 3px 6px;
+  margin: 0 3px;
+  font-weight: bold; }
+
+.next {
+  margin-left: 16px; }
+
+.previous {
+  margin-right: 16px; }
+
+.current {
+  background: #FDB913;
+  border-radius: 3px;
+  padding: 3px 6px;
+  color: white; }
 
 /*******
 * FOOTER
@@ -852,7 +881,7 @@ body {
   width: 100%; }
   .portfolio a {
     color: white; }
-  .portfolio .featured-image {
+  .portfolio .attachment-post-thumbnail {
     margin-bottom: 0;
     -webkit-transition: -webkit-transform 200ms ease-in-out;
     transition: -webkit-transform 200ms ease-in-out;
@@ -861,7 +890,7 @@ body {
   .portfolio:hover .portfolio-overlay {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  .portfolio:hover .featured-image {
+  .portfolio:hover .attachment-post-thumbnail {
     -webkit-transform: scale(1.25);
             transform: scale(1.25); }
 
