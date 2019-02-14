@@ -1,9 +1,9 @@
 <?php get_header( ); ?>
 
+<div class="center">
+
 <div class="blog-index-container">
     
-
-
     <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
     
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -30,5 +30,7 @@
 </div><!-- blog-index-container -->
 
 <?php get_template_part( 'templates-parts/pagination' ); ?>
+
+</div><!-- .center -->
 
 <?php get_footer( ); ?>

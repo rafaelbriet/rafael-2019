@@ -85,4 +85,3 @@
     </section><!-- blog-nav -->
 
 <main class="site-content">
-    <div class="site-content-center">
