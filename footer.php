@@ -1,4 +1,3 @@
-    </div><!-- .site-content-center -->
 </main><!-- .site-content -->
 
 <footer class="site-footer">
