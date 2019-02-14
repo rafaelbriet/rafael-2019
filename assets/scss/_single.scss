@@ -3,7 +3,7 @@
 *******/
 .post-container {
     max-width: 800px;
-    margin: 32px auto 0;
+    margin: 0 auto;
 
     h1, h2, h3, h4, h5, h6,
     p, 
@@ -13,6 +13,10 @@
     pre {
         max-width: 600px;
         margin: 16px auto;
+    }
+
+    .post {
+        margin: 0;
     }
 }
 
@@ -29,7 +33,7 @@
 .post-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 50px 0;
+    margin: 50px 0 0;
 }
 
 .post-next,

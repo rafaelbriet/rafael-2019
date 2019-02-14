@@ -11,12 +11,7 @@
         
         <section class="post-content">
             <?php the_content(); ?>
-        </section>
-
-        <footer class="post-footer">
-        
-        </footer>
-        
+        </section>        
     </article><!-- .post -->
 
     <?php
