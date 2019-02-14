@@ -5,6 +5,7 @@
     background-image: url("assets/images/siteBackground_1080p.jpg");
     background-size: cover;
     background-position: center;
+    display: block;
 
     .blog-nav {
         display: none;
@@ -28,8 +29,10 @@
     }
 
     .site-footer {
-        margin-top: 20px;
+        margin-top: 32px;
         background: transparent;
+        display: block;
+        padding: 0;
 
         .social-icons {
             margin-left: 16px;
