@@ -1,5 +1,7 @@
 <?php get_header( ); ?>
 
+<div class="center">
+
 <div class="portfolio-index-container">
 
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
@@ -22,5 +24,7 @@
 </div><!-- .portfolio-index-container -->
 
 <?php get_template_part( 'templates-parts/pagination' ); ?>
+
+</div><!-- .center -->
 
 <?php get_footer( ); ?>
