@@ -6,11 +6,6 @@
         
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="post-header">
-            <div class="meta">
-                <span class="post-date"><?php the_date('', '', ' - '); ?></span>
-                <span class="post-categories"><?php the_category(', '); ?></span>
-            </div>
-
             <h1 class="post-title"><?php the_title(); ?></h1>
         </header>
         
@@ -19,16 +14,6 @@
         </section>
 
         <footer class="post-footer">
-        
-        <div class="post-next">
-            <p>Próximo</p>
-            <?php next_post_link('%link', '%title', 'yes'); ?> 
-        </div>
-        
-        <div class="post-previous">
-            <p>Anterior</p>
-            <?php previous_post_link('%link', '%title', 'yes'); ?>
-        </div>
         
         </footer>
         

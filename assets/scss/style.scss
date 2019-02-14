@@ -7,10 +7,11 @@ Version: 0.0.0
 Text Domain: rafaelbriet
 */
 
-@import "vendors/_normalize";
-@import "vendors/_icomoon-style";
-@import "_home";
-@import "_basic";
-@import "_portfolio";
+@import "vendors/normalize";
+@import "vendors/icomoon-style";
+@import "home";
+@import "basic";
+@import "portfolio";
+@import "single";
 
-@import "vendors/_vision-font";
+@import "vendors/vision-font";
