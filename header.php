@@ -76,10 +76,7 @@
             </nav>
 
             <div class="search-form-container">
-                <form action="">
-                    <label for="search-field"></label>
-                    <input type="text" id="search-field" placeholder="Digite aqui o que você deseja procurar">
-                </form>
+                    <?php get_search_form(); ?>
             </div>
         </div><!-- .blog-nav-center -->
     </section><!-- blog-nav -->
