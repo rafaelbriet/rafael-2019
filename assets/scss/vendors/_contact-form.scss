@@ -1,0 +1,11 @@
+.wpcf7 .wpcf7-submit {
+    float: right;
+    width: 100px;
+    
+    &::after,
+    &::before {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
