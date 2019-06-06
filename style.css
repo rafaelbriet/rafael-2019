@@ -3,7 +3,7 @@ Theme Name: Rafael 2019
 Theme URI: http://rafaelbriet.com/
 Author: Rafael Briet
 Author URI: http://rafaelbriet.com/
-Version: 1.0.1
+Version: 1.1.0
 Text Domain: rafaelbriet
 */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1614,3 +1614,5 @@ input[type="submit"]:hover {
   font-weight: normal;
   font-style: italic;
 }
+
+/*# sourceMappingURL=style.css.map */
