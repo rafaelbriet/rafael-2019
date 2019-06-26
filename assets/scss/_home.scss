@@ -5,7 +5,7 @@
     background-image: url("assets/images/siteBackground_1080p.jpg");
     background-size: cover;
     background-position: center;
-    display: block;
+    grid-template-rows: auto;
 
     .blog-nav {
         display: none;
@@ -13,43 +13,6 @@
 
     .site-header {
         border-bottom: none;
-    }
-
-    .site-content {
-        margin-top: 15%;
-        background: transparent;
-    }
-
-    .center {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0 16px;
-        display: grid;
-        grid-template-columns: 60%;
-    }
-
-    .site-footer {
-        margin-top: 32px;
-        background: transparent;
-        display: block;
-        padding: 0;
-
-        .social-icons {
-            margin-left: 16px;
-
-            &:first-of-type {
-                margin-left: 0;
-            }
-        }
-
-        a:hover::before {
-                color: #1B243A;
-                transition: color 0.5s;
-        }
-    }
-
-    .main-nav a {
-        color: white;
     }
 
     .menu-header-toggle {
@@ -61,117 +24,91 @@
         }
     }
 
+    .menu-item a {
+        color: white;
+    }
+
+    .site-content {
+        margin-top: 25vh;
+    }
+
+    .site-footer {
+        background: transparent;
+        margin-top: 32px;
+        padding: 0;
+    }
+
     .site-footer-center {
+        width: 100%;
         max-width: 1280px;
         margin: 0 auto;
         padding: 0 16px;
-        display: grid;
-        grid-template-columns: 60%;
-        text-align: left;
     }
 }
 
 .home-header {
-    font: 5rem "visionbold";
+    font: 10vmin "visionbold";
     color: #1B243A;
-    margin: 0;
-    margin-bottom: 32px;
+    margin: 0 0 32px 0;
     padding: 0;
+    line-height: 10vmin;
 
     .text-highlight {
         background: #FDB913;
-        padding: 10px 0;
+        padding: 8px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-header {
+        font-size: 8vmin;
+        line-height: 7vmin;
     }
 }
 
 .home-text {
-    font: 2.5rem "visionbold";
+    font: 6vmin "visionbold";
     color: #FDB913;
     margin: 0;
     padding: 0;
-    line-height: 120%;
+    line-height: 8vmin;
 
     .text-highlight {
         background: #1B243A;
-        padding: 10px 0;
+        padding: 8px 0;
     }
 }
 
-@media screen and (max-width: 1130px) {
-    .home {
-        .site-content {
-            margin-top: 15%;
-        }
-
-        .site-content-center {
-            grid-template-columns: 70%;
-        }
-    }
-}
-
-@media screen and (max-width: 920px) {
-    .home {
-        .site-content {
-            margin-top: 15%;
-        }
-    }
-
-    .home-header {
-        font-size: 4rem;
-    }
-
+@media (min-width: 500px) {
     .home-text {
-        font-size: 1.5rem;
-        
+        line-height: 7vmin;
     }
 }
 
-@media screen and (max-width: 640px) {
-    .home {
-        background-position: 70%;
-
-        .site-content {
-            margin-top: 40%;
-        }
-
-        .site-content-center {
-            grid-template-columns: 1fr;
-        }
-
-        .site-footer {
-            padding-bottom: 32px;
-            margin: 60px auto 0;
-        }
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .home {
-        background-position: 75%;
-
-        .site-content {
-            margin-top: 70%;
-        }
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .home {
-        .site-content {
-            margin-top: 70%;
-        }
-
-        .site-footer-center {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    .home-header {
-        font-size: 3rem;
-    }
-
+@media (min-width: 1024px) {
     .home-text {
-        font-size: 1rem;
-        line-height: 200%;
+        font-size: 4vmin;
+        line-height: 5vmin;
+    }
+}
+
+@media (min-width: 600px) {
+    .home-header,
+    .home-text {
+        padding-right: 20vmin;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-header,
+    .home-text {
+        padding-right: 40vmin;
+    }
+}
+
+@media (min-width: 1280px) {
+    .home-header,
+    .home-text {
+        padding-right: 60vmin;
     }
 }
