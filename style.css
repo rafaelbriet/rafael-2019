@@ -423,6 +423,7 @@ template {
 
 .home .site-header {
   border-bottom: none;
+  background-color: rgba(242, 242, 242, 0.2);
 }
 
 .home .menu-header-toggle {
