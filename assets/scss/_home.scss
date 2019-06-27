@@ -2,9 +2,9 @@
    ========================================================================== */
 
 .home {
-    background-image: url("assets/images/siteBackground_1080p.jpg");
+    background-image: url("assets/images/background_480.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top right;
     grid-template-rows: auto;
 
     .blog-nav {
@@ -30,7 +30,7 @@
     }
 
     .site-content {
-        margin-top: 25vh;
+        margin-top: 40vh;
     }
 
     .site-footer {
@@ -44,6 +44,23 @@
         max-width: 1280px;
         margin: 0 auto;
         padding: 0 16px;
+    }
+}
+
+@media (min-width: 520px) {
+    .home {
+        background-image: url("assets/images/background_960.jpg");
+
+        .site-content {
+            margin-top: 30vh;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .home {
+        background-image: url("assets/images/background_1920.jpg");
+        background-position: center;
     }
 }
 
