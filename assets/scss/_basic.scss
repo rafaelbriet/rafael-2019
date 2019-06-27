@@ -654,20 +654,27 @@ var {
 .site-footer {
     background: #1B243A;
     padding: 16px;
-    text-align: center;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     a {
-        font-size: 40px;
+        font-size: 30px;
         text-decoration: none;
         cursor: pointer;
         margin-left: 16px;
     
         &:first-child {
             margin-left: 0;
+        }
+    }
+}
+
+@media (min-width: 450px) {
+    .site-footer {
+        a {
+            font-size: 40px
         }
     }
 }

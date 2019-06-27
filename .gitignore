@@ -43,4 +43,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# VS Code
+.vscode
+
 # End of https://www.gitignore.io/api/sass,windows,visualstudiocode
