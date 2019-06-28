@@ -65,7 +65,8 @@
 }
 
 .home-header {
-    font: bold 10vmin "Vision";
+    font-weight: bold;
+    font-size: 10vmin;
     color: #1B243A;
     margin: 0 0 32px 0;
     padding: 0;
@@ -85,7 +86,7 @@
 }
 
 .home-text {
-    font: 6vmin "Vision";
+    font-size: 6vmin;
     color: #FDB913;
     margin: 0;
     padding: 0;
