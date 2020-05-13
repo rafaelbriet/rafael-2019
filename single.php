@@ -21,12 +21,12 @@
         <footer class="post-footer">
         
         <div class="post-next">
-            <p>Próximo</p>
+            <p><?php _e('Próximo', 'rafaelbriet'); ?></p>
             <?php next_post_link('%link', '%title', 'yes'); ?> 
         </div>
         
         <div class="post-previous">
-            <p>Anterior</p>
+            <p><?php _e('Anterior', 'rafaelbriet'); ?></p>
             <?php previous_post_link('%link', '%title', 'yes'); ?>
         </div>
         
@@ -37,7 +37,7 @@
     <?php
             endwhile;
             else :
-                echo 'Desculpa, mas nenhum post foi encontrado';
+                _e('Desculpa, mas nenhuma publicação foi encontrado.', 'rafaelbriet');
         endif;
     ?>
 

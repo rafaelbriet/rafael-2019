@@ -14,12 +14,12 @@
 
         <div class="portfolio-overlay">
             <h2 class="portfolio-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="read-more portfolio-read-more">Coontinue lendo</a>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="read-more portfolio-read-more"><?php _e('Continue lendo', 'rafaelbriet'); ?></a>
         </div>
 
     </article><!-- .post -->
 
-    <?php endwhile; else : echo 'Desculpa, mas nenhum post foi encontrado'; endif;?>
+    <?php endwhile; else : _e('Desculpa, mas nenhuma publicação foi encontrado.', 'rafaelbriet'); endif;?>
 
 </div><!-- .portfolio-index-container -->
 

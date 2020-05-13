@@ -22,7 +22,7 @@
     <?php
             endwhile;
             else :
-                echo 'Desculpa, mas nenhum post foi encontrado';
+                _e('Desculpa, mas nenhuma publicação foi encontrado.', 'rafaelbriet');
         endif;
     ?>
 

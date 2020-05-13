@@ -2,10 +2,10 @@
 
 <div class="center">
 
-    <h1>Ops! A Página não foi encontrada.</h1>
+    <h1><?php _e('Ops! A Página não foi encontrada.', 'rafaelbriet'); ?></h1>
 
-    <p>Infelimente a página que você está tentando acessar não está aqui. Se você tem certeza que você o endereço é esse mesmo, talvez a página tenha sido renomeada, movida ou apagada.</p>
-    <p>Você pode voltar a <a href="<?php echo get_home_url(); ?>">página inicial</a> ou usar o campo de pesquisa abaixo:</p>
+    <p><?php _e('Infelizmente a página que você está tentando acessar não está aqui. Se você tem certeza que o endereço está correto, talvez a página tenha sido renomeada, movida ou apagada.', 'rafaelbriet'); ?></p>
+    <p><?php _e('Você pode usar um dos links no menu ou o campo de pesquisa abaixo para continuar navegando:', 'rafaelbriet'); ?></p>
 
     <?php get_search_form(); ?>
 

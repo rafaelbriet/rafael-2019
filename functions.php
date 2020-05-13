@@ -29,9 +29,9 @@ if ( ! function_exists( 'rafaelbriet_setup' ) ) :
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'header-menu' => __( 'Primary', 'rafaelbriet' ),
-				'blog-menu' => __( 'Blog Menu', 'rafaelbriet' ),
-				'portfolio-menu' => __( 'Portfolio Menu', 'rafaelbriet' ),
+				'header-menu' => __( 'Menu Principal', 'rafaelbriet' ),
+				'blog-menu' => __( 'Menu do Blog', 'rafaelbriet' ),
+				'portfolio-menu' => __( 'Menu do Portfolio', 'rafaelbriet' ),
 			)
 		);
 

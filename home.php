@@ -17,13 +17,13 @@
 
         <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
         <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="read-more">Coontinue lendo</a>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="read-more"><?php _e('Continue lendo', 'rafaelbriet') ?></a>
     </article><!-- .post -->
 
     <?php
             endwhile;
             else :
-                echo 'Desculpa, mas nenhum post foi encontrado';
+                _e('Desculpa, mas nenhuma publicação foi encontrado.', 'rafaelbriet');
         endif;
     ?>
 
