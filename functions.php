@@ -1,5 +1,7 @@
 <?php
 
+require_once( get_template_directory(  ) . '/includes/function-theme-settings.php');
+
 if ( ! function_exists( 'rafaelbriet_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
