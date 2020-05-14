@@ -492,12 +492,16 @@ var {
         display: block;
         align-self: center;
         &:before {
-            content: '\f002';
-            font-family: 'icomoon';
-            height: 20px;
-            width: 20px;
+            content: "\f002";
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+            height: 32px;
+            width: 32px;
             color: #333333;
             display: block;
+            margin: 0 auto;
+            font-size: 22px;
+            text-align: center;
         }
     }
 
@@ -653,8 +657,7 @@ var {
 *******/
 .site-footer {
     background: #1B243A;
-    padding: 16px;
-    margin-top: 20px;
+    padding: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -664,7 +667,7 @@ var {
         text-decoration: none;
         cursor: pointer;
         margin-left: 16px;
-    
+        
         &:first-child {
             margin-left: 0;
         }
@@ -677,4 +680,23 @@ var {
             font-size: 40px
         }
     }
+}
+
+/*******
+* Icons
+*******/
+.social-icons {
+    background-color: white;
+    width: 22px;
+    height: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+i.fab {
+    color: #1B243A;
+    font-size: 22px;
+    margin: auto;
 }
