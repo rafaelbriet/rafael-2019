@@ -1,0 +1,1 @@
+<p> <?php _e('Desculpa, mas nenhuma publicação foi encontrada.', 'rafaelbriet'); ?></p>

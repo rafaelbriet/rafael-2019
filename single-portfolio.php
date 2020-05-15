@@ -18,7 +18,7 @@
     <?php
             endwhile;
             else :
-                _e('Desculpa, mas nenhuma publicação foi encontrado.', 'rafaelbriet');
+                get_template_part( 'templates-parts/content-none' );
         endif;
     ?>
 

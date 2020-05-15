@@ -19,7 +19,11 @@
 
     </article><!-- .post -->
 
-    <?php endwhile; else : _e('Desculpa, mas nenhuma publicação foi encontrado.', 'rafaelbriet'); endif;?>
+    <?php 
+        endwhile; 
+        else : 
+            get_template_part( 'templates-parts/content-none' ); 
+        endif;?>
 
 </div><!-- .portfolio-index-container -->
 
