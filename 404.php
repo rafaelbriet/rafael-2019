@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="center">
+<div class="post-container">
 
     <h1><?php _e('Ops! A Página não foi encontrada.', 'rafaelbriet'); ?></h1>
 
