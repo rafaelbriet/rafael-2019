@@ -985,8 +985,12 @@ var {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.search-form-container form {
+
+.search-form {
   padding: 0;
   margin: 0;
   -ms-flex-item-align: center;
@@ -996,56 +1000,118 @@ var {
   display: flex;
   width: 100%;
 }
-.search-form-container label {
-  display: block;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.search-form-container label:before {
-  content: "\f002";
-  font-weight: 900;
-  font-family: 'Font Awesome 5 Free';
-  height: 32px;
-  width: 32px;
-  color: #333333;
-  display: block;
-  margin: 0 auto;
-  font-size: 22px;
-  text-align: center;
-}
-.search-form-container input {
+
+.search-form-input {
   background-color: transparent;
   border: 0;
   margin-left: 8px;
   padding: 10px;
   border-radius: 3px;
-  -webkit-transition: background-color 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out;
   width: 100%;
+  -webkit-transition: background-color 400ms ease-in-out;
+  transition: background-color 400ms ease-in-out;
 }
-.search-form-container input::-webkit-input-placeholder {
+.search-form-input::-webkit-input-placeholder {
   font-style: italic;
   font-size: 14px;
   color: #BFBFBF;
 }
-.search-form-container input:-ms-input-placeholder {
+.search-form-input:-ms-input-placeholder {
   font-style: italic;
   font-size: 14px;
   color: #BFBFBF;
 }
-.search-form-container input::-ms-input-placeholder {
+.search-form-input::-ms-input-placeholder {
   font-style: italic;
   font-size: 14px;
   color: #BFBFBF;
 }
-.search-form-container input::placeholder {
+.search-form-input::placeholder {
   font-style: italic;
   font-size: 14px;
   color: #BFBFBF;
 }
-.search-form-container input:focus {
+.search-form-input:focus {
   outline: 0 solid red;
   background-color: white;
+  -webkit-transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
+}
+.search-form-input:focus ~ .search-form-button {
+  width: 80px;
+  height: auto;
+  padding: 10px;
+  -webkit-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
+}
+.search-form-input:focus ~ .search-form-button:hover {
+  background-color: #1B243A;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+.search-form-input:focus ~ .search-form-button i {
+  display: block;
+}
+.search-form-input:focus ~ .search-form-label {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
+.search-form-button {
+  background-color: #2A3759;
+  border: none;
+  border-radius: 3px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 8px;
+  cursor: pointer;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  -webkit-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
+}
+.search-form-button:focus {
+  width: 80px;
+  height: auto;
+  padding: 10px;
+  -webkit-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
+}
+.search-form-button:focus:hover {
+  background-color: #1B243A;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+.search-form-button:focus i {
+  display: block;
+}
+.search-form-button:focus + .search-form-label {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.search-form-button i {
+  display: none;
+  color: white;
+}
+
+.search-form-label {
+  width: auto;
+  height: auto;
+  margin-left: 8px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
 
 /*******
@@ -1079,7 +1145,7 @@ var {
 @media screen and (max-width: 560px) {
   .blog-index-container,
   .portfolio-index-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .post {
@@ -1123,6 +1189,15 @@ var {
 }
 .post-title a:hover {
   text-decoration: underline;
+}
+
+.search-title {
+  grid-column: 1 / 4;
+  margin-top: 0;
+}
+
+.search-highlight {
+  background-color: #FDB913;
 }
 
 .meta, .read-more {
@@ -1272,6 +1347,24 @@ i.fab {
   text-align: center;
   width: 100%;
   padding: 0 10px;
+}
+
+.search .portfolio {
+  width: 100%;
+}
+.search .portfolio a {
+  color: #333333;
+}
+.search .portfolio .meta {
+  margin-top: 16px;
+}
+.search .portfolio .attachment-post-thumbnail {
+  -webkit-transition: none;
+  transition: none;
+}
+.search .portfolio:hover .attachment-post-thumbnail {
+  -webkit-transform: none;
+          transform: none;
 }
 
 /*******

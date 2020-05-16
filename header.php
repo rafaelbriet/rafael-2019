@@ -74,10 +74,9 @@
                 ?>
                 
             </nav>
-
-            <div class="search-form-container">
-                    <?php get_search_form(); ?>
-            </div>
+            
+            <?php get_search_form(); ?>
+            
         </div><!-- .blog-nav-center -->
     </section><!-- blog-nav -->
 

@@ -113,3 +113,25 @@ function rafaelbriet_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'rafaelbriet_scripts' );
+
+/**
+ * 
+ * Text highlight for search results
+ * 
+ * author: Vincent Decaux
+ * link: https://wordpress.stackexchange.com/a/359840
+ * 
+ */
+function highlight_results($text) {
+    if (is_search() && !is_admin()) {
+        $sr = get_query_var('s');
+        $keys = explode(' ', $sr);
+        $keys = array_filter($keys);
+        $text = preg_replace('/('.implode('|', $keys) .')/i', '<mark class="search-highlight">\0</mark>', $text);
+	}
+	
+    return $text;
+}
+
+add_filter('the_excerpt', 'highlight_results');
+add_filter('the_title', 'highlight_results');

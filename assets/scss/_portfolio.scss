@@ -46,3 +46,27 @@
     width: 100%;
     padding: 0 10px;
 }
+
+.search {
+    .portfolio {
+        width: 100%;
+    
+        a {
+            color: #333333;
+        }
+
+        .meta {
+            margin-top: 16px;
+        }
+    
+        .attachment-post-thumbnail {
+            transition: none;
+        }
+    
+        &:hover {
+            .attachment-post-thumbnail {
+                transform: none;
+            }
+        }
+    }
+}
