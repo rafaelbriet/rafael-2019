@@ -608,7 +608,7 @@ var {
 @media screen and (max-width: 560px) {
     .blog-index-container,
     .portfolio-index-container {
-       grid-template-columns: repeat(3, 1fr);
+       grid-template-columns: repeat(1, 1fr);
     }
 }
 
