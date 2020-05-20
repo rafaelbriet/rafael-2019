@@ -12,7 +12,7 @@ registerBlockType('rafaelbriet/home-page', {
         header: {
             type: 'string',
             source: 'html',
-            selector: 'h2'
+            selector: '.block-header-span'
         },
         headerColor: {
             type: 'string',
@@ -24,7 +24,7 @@ registerBlockType('rafaelbriet/home-page', {
         body: {
             type: 'string',
             source: 'html',
-            selector: 'p'
+            selector: '.block-header-body'
         },
         bodyColor: {
             type: 'string',
@@ -81,11 +81,11 @@ registerBlockType('rafaelbriet/home-page', {
             </InspectorControls>,
             
             <div className="home-block-container">
-                <h2>
-                    <RichText key="editable" tagName="span" className="home-block-header" placeholder={ __( 'Cabeçalho', 'rafaelbriet' ) } value={ header } onChange={ OnHeaderChange } style={{ color: headerColor, backgroundColor: headerBackgroundColor, }} />
+                <h2 className="home-block-header">
+                    <RichText key="editable" tagName="span" className="block-header-span" placeholder={ __( 'Cabeçalho', 'rafaelbriet' ) } value={ header } onChange={ OnHeaderChange } style={{ color: headerColor, backgroundColor: headerBackgroundColor, }} />
                 </h2>
-                <p>
-                <RichText key="editable" tagName="span" className="home-block-p" placeholder={ __( 'Texto', 'rafaelbriet' ) } value={ body } onChange={ OnBodyChange } style={{ color: bodyColor, backgroundColor: bodyBackgroundColor, }} />
+                <p className="home-block-p">
+                    <RichText key="editable" tagName="span" className="block-header-body" placeholder={ __( 'Texto', 'rafaelbriet' ) } value={ body } onChange={ OnBodyChange } style={{ color: bodyColor, backgroundColor: bodyBackgroundColor, }} />
                 </p>
             </div>
         ]);
@@ -98,10 +98,10 @@ registerBlockType('rafaelbriet/home-page', {
         return (
             <div className="home-block-container">
                 <h2 className="home-block-header">
-                    <RichText.Content tagName="span" value={ header } style={{ color: headerColor, backgroundColor: headerBackgroundColor, }} />
+                    <RichText.Content tagName="span" className="block-header-span" value={ header } style={{ color: headerColor, backgroundColor: headerBackgroundColor, }} />
                 </h2>
                 <p className="home-block-p">
-                    <RichText.Content tagName="span" value={ body } style={{ color: bodyColor, backgroundColor: bodyBackgroundColor, }} />
+                    <RichText.Content tagName="span" className="block-header-body" value={ body } style={{ color: bodyColor, backgroundColor: bodyBackgroundColor, }} />
                 </p>
             </div>  
         );
