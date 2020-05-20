@@ -836,6 +836,13 @@ var {
     display: block;
     color: white;
   }
+  .menu-item a:before, .menu-item a:after {
+    height: 0;
+    background-color: none;
+  }
+  .menu-item a:hover:before, .menu-item a:hover:after, .menu-item a:focus:before, .menu-item a:focus:after {
+    opacity: 0;
+  }
 }
 .menu-header-open {
   height: 100vh;

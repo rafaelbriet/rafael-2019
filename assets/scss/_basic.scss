@@ -349,6 +349,19 @@ var {
         a {
             display: block;
             color: white;
+            
+            &:before,
+            &:after {
+                height: 0;
+                background-color: none;
+            }
+            &:hover,
+            &:focus {
+                &:before,
+                &:after {
+                    opacity: 0;
+                }
+            }
         }
     }
 }
