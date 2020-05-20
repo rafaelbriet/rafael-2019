@@ -1365,6 +1365,7 @@ i.fab {
 *******/
 .post-container {
   max-width: 800px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 .post-container h1, .post-container h2, .post-container h3, .post-container h4, .post-container h5, .post-container h6,
@@ -1417,6 +1418,7 @@ i.fab {
   border-top: 1px solid #BFBFBF;
   margin-top: 32px;
   margin-bottom: -16px;
+  padding: 0 16px;
 }
 .comments-area::after {
   content: '';
