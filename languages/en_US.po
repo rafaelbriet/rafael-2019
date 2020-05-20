@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rafael 2019 1.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/site-2019\n"
-"POT-Creation-Date: 2020-05-13T21:03:59+02:00\n"
-"PO-Revision-Date: 2020-05-13 16:07-0300\n"
+"POT-Creation-Date: 2020-05-20T20:46:21+02:00\n"
+"PO-Revision-Date: 2020-05-20 15:47-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -50,14 +50,9 @@ msgstr ""
 "You can use one of the links in the menu or the search field below to "
 "continue browsing:"
 
-#: archive-portfolio.php:17 home.php:20 index.php:20
+#: archive-portfolio.php:17 home.php:20 index.php:20 search.php:32
 msgid "Continue lendo"
 msgstr "Keep reading"
-
-#: archive-portfolio.php:22 home.php:26 index.php:26 page.php:20
-#: single-portfolio.php:25 single.php:40
-msgid "Desculpa, mas nenhuma publicação foi encontrado."
-msgstr "Sorry, but no posts were found."
 
 #: comments.php:17
 msgid "Um comentário em"
@@ -87,21 +82,29 @@ msgstr "Comments are closed."
 msgid "Faça parte dessa conversa!"
 msgstr "Be part of this conversation!"
 
-#: functions.php:32
+#: functions.php:35
 msgid "Menu Principal"
 msgstr "Main Menu"
 
-#: functions.php:33
+#: functions.php:36
 msgid "Menu do Blog"
 msgstr "Blog Menu"
 
-#: functions.php:34
+#: functions.php:37
 msgid "Menu do Portfolio"
 msgstr "Portfolio Menu"
 
 #: header.php:56
 msgid "Categorias"
 msgstr "Categories"
+
+#. translators: %1$s is replaced with the number of search results. %2$s is replaced with the search query
+#: search.php:15
+msgctxt "search result"
+msgid "Foi encontrado %1$s resultado para o termo \"%2$s\":"
+msgid_plural "Foram encontrados %1$s resultados para o termo \"%2$s\":"
+msgstr[0] "It was found %1$s result for the term \"%2$s\":"
+msgstr[1] "It was found %1$s results for the term \"%2$s\":"
 
 #: searchform.php:3
 msgid "Digite aqui o que você deseja procurar"
@@ -115,6 +118,44 @@ msgstr "Next"
 msgid "Anterior"
 msgstr "Previous"
 
+#: templates-parts/content-none.php:1
+msgid "Desculpa, mas nenhuma publicação foi encontrada."
+msgstr "Sorry, but no posts were found."
+
 #: templates-parts/pagination.php:6
 msgid "Navegação das publicações"
 msgstr "Posts navigation"
+
+#: assets/js/blocks/gutenberg-home-block.js:7
+msgid "Texto da Página Inicial"
+msgstr ""
+
+#: assets/js/blocks/gutenberg-home-block.js:8
+msgid "Texto personalizado para a página inicial"
+msgstr ""
+
+#: assets/js/blocks/gutenberg-home-block.js:68
+msgid "Configurações do cabeçalho"
+msgstr ""
+
+#: assets/js/blocks/gutenberg-home-block.js:69
+#: assets/js/blocks/gutenberg-home-block.js:76
+msgid "Cor do texto"
+msgstr ""
+
+#: assets/js/blocks/gutenberg-home-block.js:71
+#: assets/js/blocks/gutenberg-home-block.js:78
+msgid "Cor do fundo"
+msgstr ""
+
+#: assets/js/blocks/gutenberg-home-block.js:75
+msgid "Configurações do corpo"
+msgstr ""
+
+#: assets/js/blocks/gutenberg-home-block.js:85
+msgid "Cabeçalho"
+msgstr ""
+
+#: assets/js/blocks/gutenberg-home-block.js:88
+msgid "Texto"
+msgstr ""

@@ -12,7 +12,7 @@
             $query = get_search_query();
 
             /* translators: %1$s is replaced with the number of search results. %2$s is replaced with the search query */
-            printf( _nx('Foi encontrado %1$s resultado para o termo "%2$s":', 'Foram econtrados %1$s resultados para o termo "%2$s":', $results, 'search result', 'rafaelbriet'), $results, $query );
+            printf( _nx('Foi encontrado %1$s resultado para o termo "%2$s":', 'Foram encontrados %1$s resultados para o termo "%2$s":', $results, 'search result', 'rafaelbriet'), $results, $query );
         ?>
     </h2>
 
