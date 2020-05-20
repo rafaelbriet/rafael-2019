@@ -1,0 +1,1 @@
+import './blocks/gutenberg-home-block.js';

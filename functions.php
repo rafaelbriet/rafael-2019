@@ -1,6 +1,7 @@
 <?php
 
-require_once( get_template_directory(  ) . '/includes/function-theme-settings.php');
+require( get_template_directory(  ) . '/includes/function-theme-settings.php');
+require( get_template_directory(  ) . '/includes/gutenberg.php');
 
 if ( ! function_exists( 'rafaelbriet_setup' ) ) :
 	/**

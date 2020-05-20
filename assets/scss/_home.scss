@@ -29,13 +29,9 @@
         color: white;
     }
 
-    .site-content {
-        margin-top: 40vh;
-    }
-
     .site-footer {
-        background: transparent;
-        margin-top: 32px;
+        background: none;
+        margin-top: 16px;
         padding: 0;
     }
 
@@ -47,13 +43,49 @@
     }
 }
 
+.home-content {
+    margin-top: 75%;
+}
+
+.home-block-header {
+    font-size: 32px;
+    line-height: 1;
+    margin: 0 0 8px 0;
+}
+
+.home-block-p {
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+}
+
 @media (min-width: 520px) {
     .home {
         background-image: url("assets/images/background_960.jpg");
+    }
 
-        .site-content {
-            margin-top: 30vh;
-        }
+    .home-content {
+        width: 80%;
+        margin-top: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    .home .site-footer {
+        margin-top: 32px;
+    }
+
+    .home-content {
+        width: 55%;
+        margin-top: 30%;
+    }
+    
+    .home-block-header {
+        font-size: 48px;
+    }
+    
+    .home-block-p {
+        font-size: 24px;
     }
 }
 
@@ -62,72 +94,17 @@
         background-image: url("assets/images/background_1920.jpg");
         background-position: center;
     }
-}
 
-.home-header {
-    font-weight: bold;
-    font-size: 10vmin;
-    color: #1B243A;
-    margin: 0 0 32px 0;
-    padding: 0;
-    line-height: 10vmin;
-
-    .text-highlight {
-        background: #FDB913;
-        padding: 8px 0;
+    .home-content {
+        width: 55%;
+        margin-top: 20%;
     }
-}
-
-@media (min-width: 1024px) {
-    .home-header {
-        font-size: 8vmin;
-        line-height: 7vmin;
+    
+    .home-block-header {
+        font-size: 72px;
     }
-}
-
-.home-text {
-    font-size: 6vmin;
-    color: #FDB913;
-    margin: 0;
-    padding: 0;
-    line-height: 8vmin;
-
-    .text-highlight {
-        background: #1B243A;
-        padding: 8px 0;
-    }
-}
-
-@media (min-width: 500px) {
-    .home-text {
-        line-height: 7vmin;
-    }
-}
-
-@media (min-width: 1024px) {
-    .home-text {
-        font-size: 4vmin;
-        line-height: 5vmin;
-    }
-}
-
-@media (min-width: 600px) {
-    .home-header,
-    .home-text {
-        padding-right: 20vmin;
-    }
-}
-
-@media (min-width: 1024px) {
-    .home-header,
-    .home-text {
-        padding-right: 40vmin;
-    }
-}
-
-@media (min-width: 1280px) {
-    .home-header,
-    .home-text {
-        padding-right: 60vmin;
+    
+    .home-block-p {
+        font-size: 32px;
     }
 }

@@ -5,7 +5,9 @@
   "main": "\u001b[D\u001b\u001b[C\u001bjs\u001b[C",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "sass --watch assets/scss/style.scss:style.css"
+    "sass-watch": "sass --watch assets/scss/style.scss:style.css",
+    "wp-build:scripts": "wp-scripts build index=./assets/js/blocks-index.js -o  ./assets/build/blocks.js",
+    "wp-watch": "wp-scripts start index=./assets/js/blocks-index.js -o  ./assets/build/blocks.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/rafaelbriet/site-2019/issues"
   },
-  "homepage": "https://github.com/rafaelbriet/site-2019#readme"
+  "homepage": "https://github.com/rafaelbriet/site-2019#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^9.1.0"
+  }
 }

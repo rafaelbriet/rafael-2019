@@ -405,12 +405,9 @@ template {
 .home .menu-item a {
   color: white;
 }
-.home .site-content {
-  margin-top: 40vh;
-}
 .home .site-footer {
-  background: transparent;
-  margin-top: 32px;
+  background: none;
+  margin-top: 16px;
   padding: 0;
 }
 .home .site-footer-center {
@@ -420,12 +417,48 @@ template {
   padding: 0 16px;
 }
 
+.home-content {
+  margin-top: 75%;
+}
+
+.home-block-header {
+  font-size: 32px;
+  line-height: 1;
+  margin: 0 0 8px 0;
+}
+
+.home-block-p {
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+}
+
 @media (min-width: 520px) {
   .home {
     background-image: url("assets/images/background_960.jpg");
   }
-  .home .site-content {
-    margin-top: 30vh;
+
+  .home-content {
+    width: 80%;
+    margin-top: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .home .site-footer {
+    margin-top: 32px;
+  }
+
+  .home-content {
+    width: 55%;
+    margin-top: 30%;
+  }
+
+  .home-block-header {
+    font-size: 48px;
+  }
+
+  .home-block-p {
+    font-size: 24px;
   }
 }
 @media (min-width: 960px) {
@@ -433,65 +466,18 @@ template {
     background-image: url("assets/images/background_1920.jpg");
     background-position: center;
   }
-}
-.home-header {
-  font-weight: bold;
-  font-size: 10vmin;
-  color: #1B243A;
-  margin: 0 0 32px 0;
-  padding: 0;
-  line-height: 10vmin;
-}
-.home-header .text-highlight {
-  background: #FDB913;
-  padding: 8px 0;
-}
 
-@media (min-width: 1024px) {
-  .home-header {
-    font-size: 8vmin;
-    line-height: 7vmin;
+  .home-content {
+    width: 55%;
+    margin-top: 20%;
   }
-}
-.home-text {
-  font-size: 6vmin;
-  color: #FDB913;
-  margin: 0;
-  padding: 0;
-  line-height: 8vmin;
-}
-.home-text .text-highlight {
-  background: #1B243A;
-  padding: 8px 0;
-}
 
-@media (min-width: 500px) {
-  .home-text {
-    line-height: 7vmin;
+  .home-block-header {
+    font-size: 72px;
   }
-}
-@media (min-width: 1024px) {
-  .home-text {
-    font-size: 4vmin;
-    line-height: 5vmin;
-  }
-}
-@media (min-width: 600px) {
-  .home-header,
-  .home-text {
-    padding-right: 20vmin;
-  }
-}
-@media (min-width: 1024px) {
-  .home-header,
-  .home-text {
-    padding-right: 40vmin;
-  }
-}
-@media (min-width: 1280px) {
-  .home-header,
-  .home-text {
-    padding-right: 60vmin;
+
+  .home-block-p {
+    font-size: 32px;
   }
 }
 body {
@@ -1602,6 +1588,24 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: #1B243A;
+}
+
+/* Gutenberg
+   ========================================================================== */
+.has-rafael-briet-blue-color {
+  color: #1B243A;
+}
+
+.has-rafael-briet-yellow-color {
+  color: #FDB913;
+}
+
+.has-rafael-briet-blue-background-color {
+  background-color: #1B243A;
+}
+
+.has-rafael-briet-yellow-background-color {
+  background-color: #FDB913;
 }
 
 .wpcf7 .wpcf7-submit {

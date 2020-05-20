@@ -1,10 +1,22 @@
 <?php get_header(); ?>
 
 <div class="center">
+    
+    <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <h2 class="home-header"><span class="text-highlight">Bem vindo ao meu canto na web</span></h2>
-    <p class="home-text"><span class="text-highlight">Eu sou um publicitário fascinado por design, arte e tecnologia</span></p>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <section class="home-content">
+                <?php the_content(); ?>
+            </section>        
+        </article>
 
-</div><!-- .center -->
+    <?php
+        endwhile;
+        else :
+            get_template_part( 'templates-parts/content-none' );
+        endif;
+    ?>
+
+</div>
 
 <?php get_footer(); ?>
