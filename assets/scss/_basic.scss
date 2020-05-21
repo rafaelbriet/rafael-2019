@@ -335,6 +335,10 @@ var {
         align-content: space-around;
         flex-wrap: wrap;
         transition: height 200ms ease-in-out;
+
+        a {
+            color: white;
+        }
     }
 
     .menu-item {
@@ -348,7 +352,6 @@ var {
 
         a {
             display: block;
-            color: white;
             
             &:before,
             &:after {

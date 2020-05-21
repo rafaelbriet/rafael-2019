@@ -823,6 +823,9 @@ var {
     -webkit-transition: height 200ms ease-in-out;
     transition: height 200ms ease-in-out;
   }
+  .menu-header a {
+    color: white;
+  }
 
   .menu-item {
     width: 100%;
@@ -834,7 +837,6 @@ var {
   }
   .menu-item a {
     display: block;
-    color: white;
   }
   .menu-item a:before, .menu-item a:after {
     height: 0;
