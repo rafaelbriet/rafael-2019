@@ -1620,6 +1620,7 @@ input[type="submit"]:hover {
 .wpcf7 .wpcf7-submit {
   float: right;
   width: 100px;
+  margin-bottom: 16px;
 }
 .wpcf7 .wpcf7-submit::after, .wpcf7 .wpcf7-submit::before {
   content: '';
