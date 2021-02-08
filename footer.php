@@ -13,27 +13,27 @@
             $twitter = esc_html( get_option( 'twitter_url' ) );
 
             if ($behance) {
-                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons"><i class="fab fa-behance"></i></a>', $behance);
+                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons" title="Meu perfil no Behance"><i class="fab fa-behance"></i></a>', $behance);
             }
 
             if ($facebook) {
-                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons"><i class="fab fa-facebook-f"></i></a>', $facebook);
+                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons" title="Meu perfil no Facebook"><i class="fab fa-facebook-f"></i></a>', $facebook);
             }
 
             if ($github) {
-                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons"><i class="fab fa-github"></i></a>', $github);
+                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons" title="Meu perfil no GitHub"><i class="fab fa-github"></i></a>', $github);
             }
 
             if ($instagram) {
-                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons"><i class="fab fa-instagram"></i></a>', $instagram);
+                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons" title="Meu perfil no Instagram"><i class="fab fa-instagram"></i></a>', $instagram);
             }
 
             if ($linkedin) {
-                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons"><i class="fab fa-linkedin-in"></i></a>', $linkedin);
+                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons" title="Meu perfil no LinkedIn"><i class="fab fa-linkedin-in"></i></a>', $linkedin);
             }
 
             if ($twitter) {
-                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons"><i class="fab fa-twitter"></i></a>', $twitter);
+                printf('<a href="%s" rel="noopener" target="_blank" class="social-icons" title="Meu perfil no Twitter"><i class="fab fa-twitter"></i></a>', $twitter);
             }
         ?>
 
