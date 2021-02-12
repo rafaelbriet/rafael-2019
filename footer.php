@@ -41,7 +41,6 @@
     </div><!-- .site-footer-center -->
 </footer><!-- .site-footer -->
 
-<script src="https://kit.fontawesome.com/5a3e06cedb.js" crossorigin="anonymous"></script>
 <?php wp_footer(); ?>
 
 </body>
