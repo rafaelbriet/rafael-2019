@@ -5,6 +5,7 @@
     src: url('assets/fonts/Vision-Regular.woff2') format('woff2');
     src: url('assets/fonts/Vision-Regular.woff') format('woff');
     src: url('assets/fonts/Vision-Regular.ttf') format('truetype');
+    font-display: fallback;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
     src: url('assets/fonts/Vision-Italic.woff2') format('woff2');
     src: url('assets/fonts/Vision-Italic.woff') format('woff');
     src: url('assets/fonts/Vision-Italic.ttf') format('truetype');
+    font-display: fallback;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
     src: url('assets/fonts/Vision-Bold.woff2') format('woff2');
     src: url('assets/fonts/Vision-Bold.woff') format('woff');
     src: url('assets/fonts/Vision-Bold.ttf') format('truetype');
+    font-display: fallback;
 }
 
 @font-face {
@@ -32,4 +35,5 @@
     src: url('assets/fonts/Vision-BoldItalic.woff2') format('woff2');
     src: url('assets/fonts/Vision-BoldItalic.woff') format('woff');
     src: url('assets/fonts/Vision-BoldItalic.ttf') format('truetype');
+    font-display: fallback;
 }
