@@ -54,7 +54,7 @@
             <nav class="blog-categories-nav">
                 <div class="blog-nav-toggle">
                     <div><?php _e('Categorias', 'rafaelbriet'); ?></div>
-                    <div class="down-arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/arrowDown.svg'; ?>" alt=""></div>
+                    <div class="down-arrow"><img src="<?php echo get_template_directory_uri() . '/assets/images/arrowDown.svg'; ?>" alt="" width="13" height="6"></div>
                 </div>
 
                 <?php 
