@@ -28,4 +28,4 @@ function rafaelbriet_gutenberg_blocks() {
     ) );
 }
 
-add_action( 'init', 'rafaelbriet_gutenberg_blocks' );
+add_action( 'enqueue_block_editor_assets', 'rafaelbriet_gutenberg_blocks' );
